@@ -11,7 +11,7 @@ export default function MorrisseyChat() {
     if (!message.trim()) return;
 
     setLoading(true);
-const response = await fetch("https://morrisseybot-backend.onrender.com/api/morrissey", {
+const response = await fetch("https://morrisseybot-backend-2.onrender.com/api/morrissey", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message }),
